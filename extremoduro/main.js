@@ -4580,7 +4580,7 @@ var app = (function () {
             "\n\n" +
             "@extremofrase" +
             "\n\n" +
-            "https://heardle.leonmartin.cc/extremoduro";
+            "https://heardle.leonmartin.cc/extremoduro/";
           if (
             !navigator.share ||
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
