@@ -9061,6 +9061,7 @@ var app = (function () {
             url: "https://soundcloud.com/robe89560/ruptura-leve-directo-barcelona",
             answer:
               "Robe - Ruptura Leve (Directo Barcelona, Palau de la Música)",
+            timeout: 1000,
           },
           {
             url: "https://soundcloud.com/robe89560/un-suspiro-acompasado-directo",
