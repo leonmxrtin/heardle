@@ -9095,6 +9095,7 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/robe89560/puta-humanidad-directo-merida",
                         answer: "Robe - Puta Humanidad (Directo Mérida, Teatro Romano)",
+                        timeout: 2200,
                     },
                     {
                         url: "https://soundcloud.com/robe89560/tercer-movimiento-un-instante",
@@ -9111,6 +9112,7 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/robe89560/si-te-vas-directo-madrid",
                         answer: "Robe - Si Te Vas... (Directo Madrid, WiZink Center)",
+                        timeout: 2300,
                     },
                     {
                         url: "https://soundcloud.com/robe89560/del-tiempo-perdido",
@@ -9125,10 +9127,12 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/robe89560/el-cielo-cambio-de-forma",
                         answer: "Robe - El Cielo Cambió de Forma",
+                        timeout: 1000,
                     },
                     {
                         url: "https://soundcloud.com/robe89560/de-manera-urgente-directo",
                         answer: "Robe - De Manera Urgente (Directo Mérida, Teatro Romano)",
+                        timeout: 1500,
                     },
                     {
                         url: "https://soundcloud.com/robe89560/y-rozar-contigo",
@@ -9137,6 +9141,7 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/robe89560/contra-todos-directo-merida",
                         answer: "Robe - Contra Todos (Directo Mérida, Teatro Romano)",
+                        timeout: 2100,
                     },
                     {
                         url: "https://soundcloud.com/robe89560/primer-movimiento-despues-de",
@@ -9153,10 +9158,12 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/robe89560/nana-cruel-directo-merida",
                         answer: "Robe - Nana Cruel (Directo Mérida, Teatro Romano)",
+                        timeout: 16500,
                     },
                     {
                         url: "https://soundcloud.com/robe89560/por-ser-un-pervertido-directo",
                         answer: "Robe - Por Ser un Pervertido (Directo Mérida, Teatro Romano)",
+                        timeout: 2400,
                     },
                 ],
                 Pn
