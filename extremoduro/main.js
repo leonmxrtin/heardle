@@ -9197,6 +9197,7 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/extremoduro-official/volando-solo",
                         answer: "Extremoduro - Volando solo",
+                        timeout: 1200
                     },
                     {
                         url: "https://soundcloud.com/extremoduro-official/necesito-droga-y-amor",
