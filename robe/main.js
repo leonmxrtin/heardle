@@ -9104,6 +9104,7 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/robe89560/segundo-movimiento-mierda-de",
                         answer: "Robe - Segundo movimiento: Mierda de filosofía",
+                        timeout: 1000,
                     },
                     {
                         url: "https://soundcloud.com/robe89560/interludio",
