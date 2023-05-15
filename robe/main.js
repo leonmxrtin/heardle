@@ -9109,6 +9109,7 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/robe89560/interludio",
                         answer: "Robe - Interludio",
+                        timeout: 3000,
                     },
                     {
                         url: "https://soundcloud.com/robe89560/si-te-vas-directo-madrid",
