@@ -10063,14 +10063,14 @@ var app = (function() {
         P(() => {
             p();
         });
-        null == localStorage.getItem("userStats") ?
-            ((h = []), localStorage.setItem("userStats", JSON.stringify(h))) :
-            (h = JSON.parse(localStorage.getItem("userStats"))),
+        null == localStorage.getItem("extremoduroUserStats") ?
+            ((h = []), localStorage.setItem("extremoduroUserStats", JSON.stringify(h))) :
+            (h = JSON.parse(localStorage.getItem("extremoduroUserStats"))),
             (f = h.find((e) => e.id === l.id)),
             void 0 === f &&
             ((f = l),
                 h.push(f),
-                localStorage.setItem("userStats", JSON.stringify(h)));
+                localStorage.setItem("extremoduroUserStats", JSON.stringify(h)));
         let g,
             y,
             v = f.guessList,
@@ -10178,14 +10178,14 @@ var app = (function() {
                         }))
                     ),
                     n(5, (f.guessList = v), f),
-                    localStorage.setItem("userStats", JSON.stringify(h)),
+                    localStorage.setItem("extremoduroUserStats", JSON.stringify(h)),
                     (v.length != Vt.maxAttempts && 1 != s) ||
                     ((o = s),
                         n(8, (w.gameIsActive = !1), w),
                         n(5, (f.hasFinished = !0), f),
                         n(5, (f.gotCorrect = o), f),
                         n(5, (f.score = v.length), f),
-                        localStorage.setItem("userStats", JSON.stringify(h)),
+                        localStorage.setItem("extremoduroUserStats", JSON.stringify(h)),
                         i.resetAndPlay(),
                         o ?
                         (pe("wonGame", {
