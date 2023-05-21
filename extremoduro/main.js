@@ -9242,6 +9242,7 @@ var app = (function() {
                     {
                         url: "https://soundcloud.com/extremoduro-official/deltoya",
                         answer: "Extremoduro - Deltoya",
+                        timeout: 3000,
                     },
                     {
                         url: "https://soundcloud.com/extremoduro-official/hoy-te-la-meto-hasta-las",
