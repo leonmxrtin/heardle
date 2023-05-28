@@ -9013,164 +9013,286 @@ var app = (function() {
 
     // si haces trampas pierde la gracia! :(
 
-    const Cn = ue([
-            "Robe - Coda feliz",
-            "Robe - Ininteligible",
-            "Robe - Por Encima del Bien y del Mal",
-            "Robe - Querré Lo Prohibido",
-            "Robe - La Canción Más Triste",
-            "Robe - Hoy al Mundo Renuncio",
-            "Robe - Cartas Desde Gaia",
-            "Robe - Ruptura Leve (Directo Barcelona, Palau de la Música)",
-            "Robe - Un Suspiro Acompasado (Directo Madrid, WiZink Center)",
-            "Robe - Donde Se Rompen las Olas",
-            "Robe - Puta Humanidad (Directo Mérida, Teatro Romano)",
-            "Robe - Tercer movimiento: Un instante de luz",
-            "Robe - Segundo movimiento: Mierda de filosofía",
-            "Robe - Interludio",
-            "Robe - Si Te Vas... (Directo Madrid, WiZink Center)",
-            "Robe - Del Tiempo Perdido",
-            "Robe - Guerrero (Directo Mérida, Teatro Romano)",
-            "Robe - Cuarto movimiento: Yo no soy el dueño de mis emociones",
-            "Robe - El Cielo Cambió de Forma",
-            "Robe - De Manera Urgente (Directo Mérida, Teatro Romano)",
-            "Robe - ...Y Rozar Contigo",
-            "Robe - Contra Todos (Directo Mérida, Teatro Romano)",
-            "Robe - Primer movimiento: Después de la catarsis",
-            "Robe - Destrozares",
-            "Robe - Calle Melancolía",
-            "Robe - Nana Cruel (Directo Mérida, Teatro Romano)",
-            "Robe - Por Ser un Pervertido (Directo Mérida, Teatro Romano)",
-        ]),
-        On = {
-            subscribe: ue(
-                [
-                    {
-                        url: "https://soundcloud.com/robe89560/coda-feliz",
-                        answer: "Robe - Coda feliz",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/ininteligible",
-                        answer: "Robe - Ininteligible",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/por-encima-del-bien-y-del-mal",
-                        answer: "Robe - Por Encima del Bien y del Mal",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/querre-lo-prohibido",
-                        answer: "Robe - Querré Lo Prohibido",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/la-cancion-mas-triste",
-                        answer: "Robe - La Canción Más Triste",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/hoy-al-mundo-renuncio",
-                        answer: "Robe - Hoy al Mundo Renuncio",
-                        timeout: 1100,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/cartas-desde-gaia",
-                        answer: "Robe - Cartas Desde Gaia",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/cuarto-movimiento-yo-no-soy-el",
-                        answer: "Robe - Cuarto movimiento: Yo no soy el dueño de mis emociones",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/ruptura-leve-directo-barcelona",
-                        answer: "Robe - Ruptura Leve (Directo Barcelona, Palau de la Música)",
-                        timeout: 1000,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/un-suspiro-acompasado-directo",
-                        answer: "Robe - Un Suspiro Acompasado (Directo Madrid, WiZink Center)",
-                        timeout: 2000,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/donde-se-rompen-las-olas",
-                        answer: "Robe - Donde Se Rompen las Olas",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/puta-humanidad-directo-merida",
-                        answer: "Robe - Puta Humanidad (Directo Mérida, Teatro Romano)",
-                        timeout: 2200,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/tercer-movimiento-un-instante",
-                        answer: "Robe - Tercer movimiento: Un instante de luz",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/segundo-movimiento-mierda-de",
-                        answer: "Robe - Segundo movimiento: Mierda de filosofía",
-                        timeout: 1000,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/interludio",
-                        answer: "Robe - Interludio",
-                        timeout: 3000,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/si-te-vas-directo-madrid",
-                        answer: "Robe - Si Te Vas... (Directo Madrid, WiZink Center)",
-                        timeout: 2300,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/del-tiempo-perdido",
-                        answer: "Robe - Del Tiempo Perdido",
-                        timeout: 800,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/guerrero-directo-merida-teatro",
-                        answer: "Robe - Guerrero (Directo Mérida, Teatro Romano)",
-                        timeout: 1000,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/el-cielo-cambio-de-forma",
-                        answer: "Robe - El Cielo Cambió de Forma",
-                        timeout: 1000,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/de-manera-urgente-directo",
-                        answer: "Robe - De Manera Urgente (Directo Mérida, Teatro Romano)",
-                        timeout: 1500,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/y-rozar-contigo",
-                        answer: "Robe - ...Y Rozar Contigo",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/contra-todos-directo-merida",
-                        answer: "Robe - Contra Todos (Directo Mérida, Teatro Romano)",
-                        timeout: 2100,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/primer-movimiento-despues-de",
-                        answer: "Robe - Primer movimiento: Después de la catarsis",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/destrozares",
-                        answer: "Robe - Destrozares",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/calle-melancolia",
-                        answer: "Robe - Calle Melancolía",
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/nana-cruel-directo-merida",
-                        answer: "Robe - Nana Cruel (Directo Mérida, Teatro Romano)",
-                        timeout: 16500,
-                    },
-                    {
-                        url: "https://soundcloud.com/robe89560/por-ser-un-pervertido-directo",
-                        answer: "Robe - Por Ser un Pervertido (Directo Mérida, Teatro Romano)",
-                        timeout: 2400,
-                    },
-                ],
-                Pn
-            ).subscribe,
-        };
+const Cn = ue([
+    "Robe - Coda feliz",
+    "Robe - Ininteligible",
+    "Robe - Por Encima del Bien y del Mal",
+    "Robe - Querré Lo Prohibido",
+    "Robe - La Canción Más Triste",
+    "Robe - Hoy al Mundo Renuncio",
+    "Robe - Cartas Desde Gaia",
+    "Robe - Ruptura Leve (Directo Barcelona, Palau de la Música)",
+    "Robe - Un Suspiro Acompasado (Directo Madrid, WiZink Center)",
+    "Robe - Donde Se Rompen las Olas",
+    "Robe - Puta Humanidad (Directo Mérida, Teatro Romano)",
+    "Robe - Tercer movimiento: Un instante de luz",
+    "Robe - Segundo movimiento: Mierda de filosofía",
+    "Robe - Interludio",
+    "Robe - Si Te Vas... (Directo Madrid, WiZink Center)",
+    "Robe - Del Tiempo Perdido",
+    "Robe - Guerrero (Directo Mérida, Teatro Romano)",
+    "Robe - Cuarto movimiento: Yo no soy el dueño de mis emociones",
+    "Robe - El Cielo Cambió de Forma",
+    "Robe - De Manera Urgente (Directo Mérida, Teatro Romano)",
+    "Robe - ...Y Rozar Contigo",
+    "Robe - Contra Todos (Directo Mérida, Teatro Romano)",
+    "Robe - Primer movimiento: Después de la catarsis",
+    "Robe - Destrozares",
+    "Robe - Calle Melancolía",
+    "Robe - Nana Cruel (Directo Mérida, Teatro Romano)",
+    "Robe - Por Ser un Pervertido (Directo Mérida, Teatro Romano)",
+]),
+On = {
+    subscribe: ue(
+        [
+            {
+                url: "https://soundcloud.com/robe89560/coda-feliz",
+                answer: "Robe - Coda feliz",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/ininteligible",
+                answer: "Robe - Ininteligible",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/por-encima-del-bien-y-del-mal",
+                answer: "Robe - Por Encima del Bien y del Mal",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/querre-lo-prohibido",
+                answer: "Robe - Querré Lo Prohibido",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/la-cancion-mas-triste",
+                answer: "Robe - La Canción Más Triste",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/hoy-al-mundo-renuncio",
+                answer: "Robe - Hoy al Mundo Renuncio",
+                timeout: 1100,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/cartas-desde-gaia",
+                answer: "Robe - Cartas Desde Gaia",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/cuarto-movimiento-yo-no-soy-el",
+                answer: "Robe - Cuarto movimiento: Yo no soy el dueño de mis emociones",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/ruptura-leve-directo-barcelona",
+                answer: "Robe - Ruptura Leve (Directo Barcelona, Palau de la Música)",
+                timeout: 1000,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/un-suspiro-acompasado-directo",
+                answer: "Robe - Un Suspiro Acompasado (Directo Madrid, WiZink Center)",
+                timeout: 2000,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/donde-se-rompen-las-olas",
+                answer: "Robe - Donde Se Rompen las Olas",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/puta-humanidad-directo-merida",
+                answer: "Robe - Puta Humanidad (Directo Mérida, Teatro Romano)",
+                timeout: 2200,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/tercer-movimiento-un-instante",
+                answer: "Robe - Tercer movimiento: Un instante de luz",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/segundo-movimiento-mierda-de",
+                answer: "Robe - Segundo movimiento: Mierda de filosofía",
+                timeout: 1000,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/interludio",
+                answer: "Robe - Interludio",
+                timeout: 3000,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/si-te-vas-directo-madrid",
+                answer: "Robe - Si Te Vas... (Directo Madrid, WiZink Center)",
+                timeout: 2300,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/del-tiempo-perdido",
+                answer: "Robe - Del Tiempo Perdido",
+                timeout: 800,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/guerrero-directo-merida-teatro",
+                answer: "Robe - Guerrero (Directo Mérida, Teatro Romano)",
+                timeout: 1000,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/el-cielo-cambio-de-forma",
+                answer: "Robe - El Cielo Cambió de Forma",
+                timeout: 1000,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/de-manera-urgente-directo",
+                answer: "Robe - De Manera Urgente (Directo Mérida, Teatro Romano)",
+                timeout: 1500,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/y-rozar-contigo",
+                answer: "Robe - ...Y Rozar Contigo",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/contra-todos-directo-merida",
+                answer: "Robe - Contra Todos (Directo Mérida, Teatro Romano)",
+                timeout: 2100,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/primer-movimiento-despues-de",
+                answer: "Robe - Primer movimiento: Después de la catarsis",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/destrozares",
+                answer: "Robe - Destrozares",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/calle-melancolia",
+                answer: "Robe - Calle Melancolía",
+            },
+            {
+                url: "https://soundcloud.com/robe89560/nana-cruel-directo-merida",
+                answer: "Robe - Nana Cruel (Directo Mérida, Teatro Romano)",
+                timeout: 16500,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/por-ser-un-pervertido-directo",
+                answer: "Robe - Por Ser un Pervertido (Directo Mérida, Teatro Romano)",
+                timeout: 2400,
+            },
+            {
+                url: "https://soundcloud.com/robe89560/cuarto-movimiento-yo-no-soy-el",
+                answer: "Robe - Cuarto movimiento: Yo no soy el dueño de mis emociones"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/interludio",
+                answer: "Robe - Interludio",
+                timeout: 3000
+            },
+            {
+                url: "https://soundcloud.com/robe89560/por-encima-del-bien-y-del-mal",
+                answer: "Robe - Por Encima del Bien y del Mal"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/si-te-vas-directo-madrid",
+                answer: "Robe - Si Te Vas... (Directo Madrid, WiZink Center)",
+                timeout: 2300
+            },
+            {
+                url: "https://soundcloud.com/robe89560/primer-movimiento-despues-de",
+                answer: "Robe - Primer movimiento: Después de la catarsis"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/segundo-movimiento-mierda-de",
+                answer: "Robe - Segundo movimiento: Mierda de filosofía",
+                timeout: 1000
+            },
+            {
+                url: "https://soundcloud.com/robe89560/el-cielo-cambio-de-forma",
+                answer: "Robe - El Cielo Cambió de Forma",
+                timeout: 1000
+            },
+            {
+                url: "https://soundcloud.com/robe89560/coda-feliz",
+                answer: "Robe - Coda feliz"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/tercer-movimiento-un-instante",
+                answer: "Robe - Tercer movimiento: Un instante de luz"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/puta-humanidad-directo-merida",
+                answer: "Robe - Puta Humanidad (Directo Mérida, Teatro Romano)",
+                timeout: 2200
+            },
+            {
+                url: "https://soundcloud.com/robe89560/la-cancion-mas-triste",
+                answer: "Robe - La Canción Más Triste"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/y-rozar-contigo",
+                answer: "Robe - ...Y Rozar Contigo"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/cartas-desde-gaia",
+                answer: "Robe - Cartas Desde Gaia"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/contra-todos-directo-merida",
+                answer: "Robe - Contra Todos (Directo Mérida, Teatro Romano)",
+                timeout: 2100
+            },
+            {
+                url: "https://soundcloud.com/robe89560/del-tiempo-perdido",
+                answer: "Robe - Del Tiempo Perdido",
+                timeout: 800
+            },
+            {
+                url: "https://soundcloud.com/robe89560/guerrero-directo-merida-teatro",
+                answer: "Robe - Guerrero (Directo Mérida, Teatro Romano)",
+                timeout: 1000
+            },
+            {
+                url: "https://soundcloud.com/robe89560/ininteligible",
+                answer: "Robe - Ininteligible"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/querre-lo-prohibido",
+                answer: "Robe - Querré Lo Prohibido"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/un-suspiro-acompasado-directo",
+                answer: "Robe - Un Suspiro Acompasado (Directo Madrid, WiZink Center)",
+                timeout: 2000
+            },
+            {
+                url: "https://soundcloud.com/robe89560/donde-se-rompen-las-olas",
+                answer: "Robe - Donde Se Rompen las Olas"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/ruptura-leve-directo-barcelona",
+                answer: "Robe - Ruptura Leve (Directo Barcelona, Palau de la Música)",
+                timeout: 1000
+            },
+            {
+                url: "https://soundcloud.com/robe89560/calle-melancolia",
+                answer: "Robe - Calle Melancolía"
+            },
+            {
+                url: "https://soundcloud.com/robe89560/hoy-al-mundo-renuncio",
+                answer: "Robe - Hoy al Mundo Renuncio",
+                timeout: 1100
+            },
+            {
+                url: "https://soundcloud.com/robe89560/por-ser-un-pervertido-directo",
+                answer: "Robe - Por Ser un Pervertido (Directo Mérida, Teatro Romano)",
+                timeout: 2400
+            },
+            {
+                url: "https://soundcloud.com/robe89560/de-manera-urgente-directo",
+                answer: "Robe - De Manera Urgente (Directo Mérida, Teatro Romano)",
+                timeout: 1500
+            },
+            {
+                url: "https://soundcloud.com/robe89560/nana-cruel-directo-merida",
+                answer: "Robe - Nana Cruel (Directo Mérida, Teatro Romano)",
+                timeout: 16500
+            },
+            {
+                url: "https://soundcloud.com/robe89560/destrozares",
+                answer: "Robe - Destrozares"
+            }
+        ],
+        Pn
+        ).subscribe,
+    };
     var Pn;
     const {
         document: An,
