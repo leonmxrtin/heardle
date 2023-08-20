@@ -329,8 +329,7 @@ var app = (function() {
                             (!f.skip_bound && f.bound[e] && f.bound[e](s), m && ne(t, e)),
                             n
                         );
-                    }) :
-                    []),
+                    }) : []),
                 f.update(),
                 (m = !0),
                 r(f.before_update),
@@ -2766,14 +2765,12 @@ var app = (function() {
                                                     return {
                                                         s: s,
                                                         n: function() {
-                                                            return r >= e.length ?
-                                                                {
-                                                                    done: !0,
-                                                                } :
-                                                                {
-                                                                    done: !1,
-                                                                    value: e[r++],
-                                                                };
+                                                            return r >= e.length ? {
+                                                                done: !0,
+                                                            } : {
+                                                                done: !1,
+                                                                value: e[r++],
+                                                            };
                                                         },
                                                         e: function(e) {
                                                             throw e;
@@ -6897,9 +6894,7 @@ var app = (function() {
 
             function Wn(e) {
                 var t = new Date(r.now());
-                return e._useUTC ?
-                    [t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()] :
-                    [t.getFullYear(), t.getMonth(), t.getDate()];
+                return e._useUTC ? [t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()] : [t.getFullYear(), t.getMonth(), t.getDate()];
             }
 
             function Rn(e) {
@@ -7473,8 +7468,7 @@ var app = (function() {
                         (n = Cr(e, t)) :
                         (((n = Cr(t, e)).milliseconds = -n.milliseconds),
                             (n.months = -n.months)),
-                        n) :
-                    {
+                        n) : {
                         milliseconds: 0,
                         months: 0,
                     };
@@ -9128,7 +9122,429 @@ var app = (function() {
         ]),
         On = {
             subscribe: ue(
-                [
+                [{
+                        url: "https://soundcloud.com/extremoduro-official/la-carrera",
+                        answer: "Extremoduro - La carrera",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tercer-movimiento-lo-de-dentro",
+                        answer: "Extremoduro - Tercer movimiento: lo de dentro",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/de-acero",
+                        answer: "Extremoduro - De acero",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/qu-borde-era-mi-valle",
+                        answer: "Extremoduro - ¡Qué borde era mi valle!",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/jesucristo-garcia",
+                        answer: "Extremoduro - Jesucristo García",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ama-ama-ama-y-ensancha-el-alma",
+                        answer: "Extremoduro - Ama, ama, ama y ensancha el alma",
+                        timeout: 4000,
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/estoy-muy-bien",
+                        answer: "Extremoduro - Estoy muy bien",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/villancico-del-rey-de",
+                        answer: "Extremoduro - Villancico del rey de Extremadura (Vaya puta mierda de villancico, colega)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ni-principes-ni-princesas",
+                        answer: "Extremoduro - Ni príncipes ni princesas",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/puta",
+                        answer: "Extremoduro - Puta",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/so-payaso",
+                        answer: "Extremoduro - So payaso",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tomas",
+                        answer: "Extremoduro - Tomás",
+                    },
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/tres-puertas",
+                        answer: "Extrechinato Y Tu - Tres puertas",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/segundo-movimiento-lo-de-fuera",
+                        answer: "Extremoduro - Segundo movimiento: lo de fuera",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/prometeo",
+                        answer: "Extremoduro - Prometeo",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/decidi",
+                        answer: "Extremoduro - Decidí",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/volando-solo",
+                        answer: "Extremoduro - Volando solo",
+                        timeout: 1200
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/necesito-droga-y-amor",
+                        answer: "Extremoduro - Necesito droga y amor",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/dulce-introduccion-al-caos",
+                        answer: "Extremoduro - Dulce introducción al caos",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-camino-de-las-utop-as",
+                        answer: "Extremoduro - El camino de las utopías",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/si-te-vas",
+                        answer: "Extremoduro - Si te vas...",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/stand-by",
+                        answer: "Extremoduro - Stand By",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/su-culo-es-miel",
+                        answer: "Extremoduro - Su culo es miel",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cerca-del-suelo",
+                        answer: "Extremoduro - Cerca del suelo",
+                    },
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/a-la-sombra-de-mi-sombra",
+                        answer: "Extrechinato Y Tu - A la sombra de mi sombra",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-vieja-cancion-sordida",
+                        answer: "Extremoduro - La vieja (Canción sórdida)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/romperas",
+                        answer: "Extremoduro - Romperás",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/deltoya",
+                        answer: "Extremoduro - Deltoya",
+                        timeout: 3000,
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/hoy-te-la-meto-hasta-las",
+                        answer: "Extremoduro - Hoy te la meto hasta las orejas",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cuarto-movimiento-la-realidad",
+                        answer: "Extremoduro - Cuarto movimiento: la realidad",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tu-corazon",
+                        answer: "Extremoduro - Tu corazón",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/extremaydura",
+                        answer: "Extremoduro - Extremaydura",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/bri-bri-bli-bli-en-el-mas-1",
+                        answer: "Extremoduro - Bri bri bli bli (En el más sucio rincón de mi negro corazón)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/menamoro",
+                        answer: "Extremoduro - Menamoro",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/golfa",
+                        answer: "Extremoduro - Golfa",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ltima-generaci-n",
+                        answer: "Extremoduro - Última generación",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tango-suicida",
+                        answer: "Extremoduro - Tango suicida",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/luce-la-oscuridad",
+                        answer: "Extremoduro - Luce la oscuridad",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/salir",
+                        answer: "Extremoduro - Salir",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mama",
+                        answer: "Extremoduro - Mamá",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/a-fuego",
+                        answer: "Extremoduro - A fuego",
+                    },
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/eterno-viajero",
+                        answer: "Extrechinato Y Tu - Eterno viajero",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/poema-sobrecogido",
+                        answer: "Extremoduro - Poema sobrecogido",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/desarraigo",
+                        answer: "Extremoduro - Desarraigo",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/experiencias-de-un-batracio-en",
+                        answer: "Extremoduro - Experiencias de un Batracio (En Directo)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sin-dios-ni-amo",
+                        answer: "Extremoduro - Sin dios ni amo",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-cancion-de-los-oficios",
+                        answer: "Extremoduro - La canción de los oficios (feat. Rosendo)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/no-me-calientes-que-me-hundo-1",
+                        answer: "Extremoduro - No me calientes que me hundo",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/estado-policial",
+                        answer: "Extremoduro - Estado policial",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/te-juzgaran-s-lo-por-tus",
+                        answer: "Extremoduro - Te juzgarán sólo por tus errores (Yo no)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/emparedado",
+                        answer: "Extremoduro - Emparedado",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sucede",
+                        answer: "Extremoduro - Sucede",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/papel-secante",
+                        answer: "Extremoduro - Papel secante",
+                    },
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/suenos",
+                        answer: "Extrechinato Y Tu - Sueños",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/arrebato",
+                        answer: "Extremoduro - Arrebato",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/manu-iv",
+                        answer: "Extremoduro - Manué IV",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/calle-esperanza-s-n",
+                        answer: "Extremoduro - Calle Esperanza s/n",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/pedra",
+                        answer: "Extremoduro - Pedrá",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/esclarecido",
+                        answer: "Extremoduro - Esclarecido",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sol-de-invierno",
+                        answer: "Extremoduro - Sol de invierno",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/resolucion",
+                        answer: "Extremoduro - Resolución",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/v-centenario",
+                        answer: "Extremoduro - V centenario",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-hoguera",
+                        answer: "Extremoduro - La hoguera",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/correcaminos-estate-al-loro",
+                        answer: "Extremoduro - Correcaminos ¡Estate al loro!",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/los-tengo-todos",
+                        answer: "Extremoduro - Los tengo todos",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/me-estoy-quitando",
+                        answer: "Extremoduro - Me estoy quitando",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/con-un-latido-del-reloj",
+                        answer: "Extremoduro - Con un latido del reloj",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cabezabajo",
+                        answer: "Extremoduro - Cabezabajo",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mi-voluntad",
+                        answer: "Extremoduro - Mi voluntad",
+                    },
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/si-el-cielo-esta-gris",
+                        answer: "Extrechinato Y Tu - Si el cielo está gris (feat. Fito y Fitipaldis)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/caballero-andante-no-me-dejeis",
+                        answer: "Extremoduro - Caballero andante (¡¡¡No me dejeis así!!!)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/posado-en-un-nenufar",
+                        answer: "Extremoduro - Posado en un nenúfar",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-duende-del-parque",
+                        answer: "Extremoduro - El duende del parque",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/abreme-el-pecho-y-registra",
+                        answer: "Extremoduro - Ábreme el pecho y registra",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/adios-abanico-que-llego-el",
+                        answer: "Extremoduro - Adiós abanico, que llegó el aire",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-dia-de-la-bestia",
+                        answer: "Extremoduro + Albert Pla - El día de la bestia",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/desidia",
+                        answer: "Extremoduro - Desidia",
+                    },
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/viento-dejame-ir-contigo",
+                        answer: "Extrechinato Y Tu - Viento (Déjame ir contigo)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/locura-transitoria",
+                        answer: "Extremoduro - Locura transitoria",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/enemigo",
+                        answer: "Extremoduro - Enemigo",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/autorretrato",
+                        answer: "Extremoduro - Autorretrato",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/pepe-botika-donde-estan-mis-2",
+                        answer: "Extremoduro - Pepe Botika (Dónde están mis amigos)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buscando-una-luna",
+                        answer: "Extremoduro - Buscando una luna",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/entre-interiores",
+                        answer: "Extremoduro - Entre interiores",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/extraterrestre",
+                        answer: "Extremoduro - Extraterrestre",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/que-sonrisa-tan-rara",
+                        answer: "Extremoduro - ¡Qué sonrisa tan rara!",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/primer-movimiento-el-sue-o",
+                        answer: "Extremoduro - Primer movimiento: el sueño",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/otra-inutil-cancion-para-la",
+                        answer: "Extremoduro - Otra inútil canción para la paz",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/relaci-n-convencional",
+                        answer: "Extremoduro - Relación convencional",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/coda-flamenca-otra-realidad",
+                        answer: "Extremoduro - Coda flamenca (Otra realidad)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/quemando-tus-recuerdos",
+                        answer: "Extremoduro - Quemando tus recuerdos",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/historias-prohibidas-nos-2",
+                        answer: "Extremoduro - Historias prohibidas (Nos tiramos a joder)",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/perro-callejero",
+                        answer: "Extremoduro - Perro callejero",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/malos-pensamientos",
+                        answer: "Extremoduro - Malos pensamientos",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-vereda-de-la-puerta-de-1",
+                        answer: "Extremoduro - La vereda de la puerta de atrás",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buler-as-de-la-sangre-caliente",
+                        answer: "Extremoduro - Bulerías de la sangre caliente",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mi-espiritu-imperecedero",
+                        answer: "Extremoduro - Mi espíritu imperecedero",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/todos-me-dicen",
+                        answer: "Extremoduro - Todos me dicen",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/islero-shirlero-o-ladron",
+                        answer: "Extremoduro - Islero shirlero o ladrón",
+                    },
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/jugete-de-amor",
+                        answer: "Extrechinato Y Tu - Jugete de amor",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/lucha-contigo",
+                        answer: "Extremoduro - Lucha contigo",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/j-d-la-central-nuclear",
+                        answer: "Extremoduro - J.D. la central nuclear",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/erase-una-vez",
+                        answer: "Extremoduro - Érase una vez",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buitre-no-come-alpiste",
+                        answer: "Extremoduro - Buitre no come alpiste",
+                    },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/peque-o-rocanrol-end-mico",
+                        answer: "Extremoduro - Pequeño rocanrol endémico",
+                    },
                     {
                         url: "https://soundcloud.com/extremoduro-official/la-carrera",
                         answer: "Extremoduro - La carrera",
@@ -9552,6 +9968,852 @@ var app = (function() {
                         url: "https://soundcloud.com/extremoduro-official/peque-o-rocanrol-end-mico",
                         answer: "Extremoduro - Pequeño rocanrol endémico",
                     },
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/me-estoy-quitando",
+                        answer: "Extremoduro - Me estoy quitando"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mi-espiritu-imperecedero",
+                        answer: "Extremoduro - Mi espíritu imperecedero"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/erase-una-vez",
+                        answer: "Extremoduro - Érase una vez"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/coda-flamenca-otra-realidad",
+                        answer: "Extremoduro - Coda flamenca (Otra realidad)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/todos-me-dicen",
+                        answer: "Extremoduro - Todos me dicen"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/a-la-sombra-de-mi-sombra",
+                        answer: "Extrechinato Y Tu - A la sombra de mi sombra"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-hoguera",
+                        answer: "Extremoduro - La hoguera"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/golfa",
+                        answer: "Extremoduro - Golfa"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/su-culo-es-miel",
+                        answer: "Extremoduro - Su culo es miel"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/entre-interiores",
+                        answer: "Extremoduro - Entre interiores"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/quemando-tus-recuerdos",
+                        answer: "Extremoduro - Quemando tus recuerdos"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ltima-generaci-n",
+                        answer: "Extremoduro - Última generación"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/jesucristo-garcia",
+                        answer: "Extremoduro - Jesucristo García"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/primer-movimiento-el-sue-o",
+                        answer: "Extremoduro - Primer movimiento: el sueño"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/deltoya",
+                        answer: "Extremoduro - Deltoya",
+                        timeout: 3000
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cabezabajo",
+                        answer: "Extremoduro - Cabezabajo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/calle-esperanza-s-n",
+                        answer: "Extremoduro - Calle Esperanza s/n"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-vieja-cancion-sordida",
+                        answer: "Extremoduro - La vieja (Canción sórdida)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/no-me-calientes-que-me-hundo-1",
+                        answer: "Extremoduro - No me calientes que me hundo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buscando-una-luna",
+                        answer: "Extremoduro - Buscando una luna"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/posado-en-un-nenufar",
+                        answer: "Extremoduro - Posado en un nenúfar"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/segundo-movimiento-lo-de-fuera",
+                        answer: "Extremoduro - Segundo movimiento: lo de fuera"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/desidia",
+                        answer: "Extremoduro - Desidia"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tercer-movimiento-lo-de-dentro",
+                        answer: "Extremoduro - Tercer movimiento: lo de dentro"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/estado-policial",
+                        answer: "Extremoduro - Estado policial"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/viento-dejame-ir-contigo",
+                        answer: "Extrechinato Y Tu - Viento (Déjame ir contigo)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/autorretrato",
+                        answer: "Extremoduro - Autorretrato"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/papel-secante",
+                        answer: "Extremoduro - Papel secante"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/esclarecido",
+                        answer: "Extremoduro - Esclarecido"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ni-principes-ni-princesas",
+                        answer: "Extremoduro - Ni príncipes ni princesas"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/caballero-andante-no-me-dejeis",
+                        answer: "Extremoduro - Caballero andante (¡¡¡No me dejeis así!!!)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sol-de-invierno",
+                        answer: "Extremoduro - Sol de invierno"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/a-fuego",
+                        answer: "Extremoduro - A fuego"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/lucha-contigo",
+                        answer: "Extremoduro - Lucha contigo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/extraterrestre",
+                        answer: "Extremoduro - Extraterrestre"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/resolucion",
+                        answer: "Extremoduro - Resolución"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buler-as-de-la-sangre-caliente",
+                        answer: "Extremoduro - Bulerías de la sangre caliente"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/arrebato",
+                        answer: "Extremoduro - Arrebato"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/te-juzgaran-s-lo-por-tus",
+                        answer: "Extremoduro - Te juzgarán sólo por tus errores (Yo no)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/de-acero",
+                        answer: "Extremoduro - De acero"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/jugete-de-amor",
+                        answer: "Extrechinato Y Tu - Jugete de amor"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/villancico-del-rey-de",
+                        answer: "Extremoduro - Villancico del rey de Extremadura (Vaya puta mierda de villancico, colega)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-duende-del-parque",
+                        answer: "Extremoduro - El duende del parque"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/islero-shirlero-o-ladron",
+                        answer: "Extremoduro - Islero shirlero o ladrón"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/correcaminos-estate-al-loro",
+                        answer: "Extremoduro - Correcaminos ¡Estate al loro!"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buitre-no-come-alpiste",
+                        answer: "Extremoduro - Buitre no come alpiste"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/extremaydura",
+                        answer: "Extremoduro - Extremaydura"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/peque-o-rocanrol-end-mico",
+                        answer: "Extremoduro - Pequeño rocanrol endémico"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/qu-borde-era-mi-valle",
+                        answer: "Extremoduro - ¡Qué borde era mi valle!"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/stand-by",
+                        answer: "Extremoduro - Stand By"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/eterno-viajero",
+                        answer: "Extrechinato Y Tu - Eterno viajero"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/decidi",
+                        answer: "Extremoduro - Decidí"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/abreme-el-pecho-y-registra",
+                        answer: "Extremoduro - Ábreme el pecho y registra"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-cancion-de-los-oficios",
+                        answer: "Extremoduro - La canción de los oficios (feat. Rosendo)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cuarto-movimiento-la-realidad",
+                        answer: "Extremoduro - Cuarto movimiento: la realidad"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/prometeo",
+                        answer: "Extremoduro - Prometeo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ama-ama-ama-y-ensancha-el-alma",
+                        answer: "Extremoduro - Ama, ama, ama y ensancha el alma",
+                        timeout: 4000
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/luce-la-oscuridad",
+                        answer: "Extremoduro - Luce la oscuridad"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/los-tengo-todos",
+                        answer: "Extremoduro - Los tengo todos"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/si-el-cielo-esta-gris",
+                        answer: "Extrechinato Y Tu - Si el cielo está gris (feat. Fito y Fitipaldis)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/v-centenario",
+                        answer: "Extremoduro - V centenario"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/dulce-introduccion-al-caos",
+                        answer: "Extremoduro - Dulce introducción al caos"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/manu-iv",
+                        answer: "Extremoduro - Manué IV"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/experiencias-de-un-batracio-en",
+                        answer: "Extremoduro - Experiencias de un Batracio (En Directo)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sin-dios-ni-amo",
+                        answer: "Extremoduro - Sin dios ni amo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/so-payaso",
+                        answer: "Extremoduro - So payaso"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/hoy-te-la-meto-hasta-las",
+                        answer: "Extremoduro - Hoy te la meto hasta las orejas"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/adios-abanico-que-llego-el",
+                        answer: "Extremoduro - Adiós abanico, que llegó el aire"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tu-corazon",
+                        answer: "Extremoduro - Tu corazón"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mi-voluntad",
+                        answer: "Extremoduro - Mi voluntad"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/malos-pensamientos",
+                        answer: "Extremoduro - Malos pensamientos"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tango-suicida",
+                        answer: "Extremoduro - Tango suicida"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/estoy-muy-bien",
+                        answer: "Extremoduro - Estoy muy bien"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/locura-transitoria",
+                        answer: "Extremoduro - Locura transitoria"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tomas",
+                        answer: "Extremoduro - Tomás"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/emparedado",
+                        answer: "Extremoduro - Emparedado"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-carrera",
+                        answer: "Extremoduro - La carrera"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/historias-prohibidas-nos-2",
+                        answer: "Extremoduro - Historias prohibidas (Nos tiramos a joder)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/perro-callejero",
+                        answer: "Extremoduro - Perro callejero"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/relaci-n-convencional",
+                        answer: "Extremoduro - Relación convencional"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-dia-de-la-bestia",
+                        answer: "Extremoduro + Albert Pla - El día de la bestia"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/j-d-la-central-nuclear",
+                        answer: "Extremoduro - J.D. la central nuclear"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/que-sonrisa-tan-rara",
+                        answer: "Extremoduro - ¡Qué sonrisa tan rara!"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/tres-puertas",
+                        answer: "Extrechinato Y Tu - Tres puertas"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/enemigo",
+                        answer: "Extremoduro - Enemigo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/desarraigo",
+                        answer: "Extremoduro - Desarraigo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-camino-de-las-utop-as",
+                        answer: "Extremoduro - El camino de las utopías"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/poema-sobrecogido",
+                        answer: "Extremoduro - Poema sobrecogido"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sucede",
+                        answer: "Extremoduro - Sucede"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/romperas",
+                        answer: "Extremoduro - Romperás"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/salir",
+                        answer: "Extremoduro - Salir"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/con-un-latido-del-reloj",
+                        answer: "Extremoduro - Con un latido del reloj"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mama",
+                        answer: "Extremoduro - Mamá"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/pedra",
+                        answer: "Extremoduro - Pedrá"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/bri-bri-bli-bli-en-el-mas-1",
+                        answer: "Extremoduro - Bri bri bli bli (En el más sucio rincón de mi negro corazón)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/necesito-droga-y-amor",
+                        answer: "Extremoduro - Necesito droga y amor"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/otra-inutil-cancion-para-la",
+                        answer: "Extremoduro - Otra inútil canción para la paz"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/pepe-botika-donde-estan-mis-2",
+                        answer: "Extremoduro - Pepe Botika (Dónde están mis amigos)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/si-te-vas",
+                        answer: "Extremoduro - Si te vas..."
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/puta",
+                        answer: "Extremoduro - Puta"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cerca-del-suelo",
+                        answer: "Extremoduro - Cerca del suelo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/menamoro",
+                        answer: "Extremoduro - Menamoro"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-vereda-de-la-puerta-de-1",
+                        answer: "Extremoduro - La vereda de la puerta de atrás"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/suenos",
+                        answer: "Extrechinato Y Tu - Sueños"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/volando-solo",
+                        answer: "Extremoduro - Volando solo",
+                        timeout: 1200
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/arrebato",
+                        answer: "Extremoduro - Arrebato"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sin-dios-ni-amo",
+                        answer: "Extremoduro - Sin dios ni amo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/si-el-cielo-esta-gris",
+                        answer: "Extrechinato Y Tu - Si el cielo está gris (feat. Fito y Fitipaldis)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/adios-abanico-que-llego-el",
+                        answer: "Extremoduro - Adiós abanico, que llegó el aire"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buitre-no-come-alpiste",
+                        answer: "Extremoduro - Buitre no come alpiste"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cabezabajo",
+                        answer: "Extremoduro - Cabezabajo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/experiencias-de-un-batracio-en",
+                        answer: "Extremoduro - Experiencias de un Batracio (En Directo)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/papel-secante",
+                        answer: "Extremoduro - Papel secante"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/que-sonrisa-tan-rara",
+                        answer: "Extremoduro - ¡Qué sonrisa tan rara!"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/historias-prohibidas-nos-2",
+                        answer: "Extremoduro - Historias prohibidas (Nos tiramos a joder)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mi-voluntad",
+                        answer: "Extremoduro - Mi voluntad"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/abreme-el-pecho-y-registra",
+                        answer: "Extremoduro - Ábreme el pecho y registra"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/islero-shirlero-o-ladron",
+                        answer: "Extremoduro - Islero shirlero o ladrón"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/erase-una-vez",
+                        answer: "Extremoduro - Érase una vez"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/necesito-droga-y-amor",
+                        answer: "Extremoduro - Necesito droga y amor"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tomas",
+                        answer: "Extremoduro - Tomás"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-vieja-cancion-sordida",
+                        answer: "Extremoduro - La vieja (Canción sórdida)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mama",
+                        answer: "Extremoduro - Mamá"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/locura-transitoria",
+                        answer: "Extremoduro - Locura transitoria"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/correcaminos-estate-al-loro",
+                        answer: "Extremoduro - Correcaminos ¡Estate al loro!"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/enemigo",
+                        answer: "Extremoduro - Enemigo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/coda-flamenca-otra-realidad",
+                        answer: "Extremoduro - Coda flamenca (Otra realidad)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/perro-callejero",
+                        answer: "Extremoduro - Perro callejero"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/eterno-viajero",
+                        answer: "Extrechinato Y Tu - Eterno viajero"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/stand-by",
+                        answer: "Extremoduro - Stand By"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/dulce-introduccion-al-caos",
+                        answer: "Extremoduro - Dulce introducción al caos"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/a-la-sombra-de-mi-sombra",
+                        answer: "Extrechinato Y Tu - A la sombra de mi sombra"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-duende-del-parque",
+                        answer: "Extremoduro - El duende del parque"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/lucha-contigo",
+                        answer: "Extremoduro - Lucha contigo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buler-as-de-la-sangre-caliente",
+                        answer: "Extremoduro - Bulerías de la sangre caliente"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/desarraigo",
+                        answer: "Extremoduro - Desarraigo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cuarto-movimiento-la-realidad",
+                        answer: "Extremoduro - Cuarto movimiento: la realidad"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/golfa",
+                        answer: "Extremoduro - Golfa"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/esclarecido",
+                        answer: "Extremoduro - Esclarecido"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/no-me-calientes-que-me-hundo-1",
+                        answer: "Extremoduro - No me calientes que me hundo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tercer-movimiento-lo-de-dentro",
+                        answer: "Extremoduro - Tercer movimiento: lo de dentro"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sol-de-invierno",
+                        answer: "Extremoduro - Sol de invierno"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/jesucristo-garcia",
+                        answer: "Extremoduro - Jesucristo García"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-camino-de-las-utop-as",
+                        answer: "Extremoduro - El camino de las utopías"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/caballero-andante-no-me-dejeis",
+                        answer: "Extremoduro - Caballero andante (¡¡¡No me dejeis así!!!)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/otra-inutil-cancion-para-la",
+                        answer: "Extremoduro - Otra inútil canción para la paz"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/entre-interiores",
+                        answer: "Extremoduro - Entre interiores"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/de-acero",
+                        answer: "Extremoduro - De acero"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/so-payaso",
+                        answer: "Extremoduro - So payaso"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/peque-o-rocanrol-end-mico",
+                        answer: "Extremoduro - Pequeño rocanrol endémico"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/manu-iv",
+                        answer: "Extremoduro - Manué IV"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tango-suicida",
+                        answer: "Extremoduro - Tango suicida"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/el-dia-de-la-bestia",
+                        answer: "Extremoduro + Albert Pla - El día de la bestia"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/quemando-tus-recuerdos",
+                        answer: "Extremoduro - Quemando tus recuerdos"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/j-d-la-central-nuclear",
+                        answer: "Extremoduro - J.D. la central nuclear"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/extraterrestre",
+                        answer: "Extremoduro - Extraterrestre"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/los-tengo-todos",
+                        answer: "Extremoduro - Los tengo todos"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/primer-movimiento-el-sue-o",
+                        answer: "Extremoduro - Primer movimiento: el sueño"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/luce-la-oscuridad",
+                        answer: "Extremoduro - Luce la oscuridad"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/segundo-movimiento-lo-de-fuera",
+                        answer: "Extremoduro - Segundo movimiento: lo de fuera"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/puta",
+                        answer: "Extremoduro - Puta"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/menamoro",
+                        answer: "Extremoduro - Menamoro"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ltima-generaci-n",
+                        answer: "Extremoduro - Última generación"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/villancico-del-rey-de",
+                        answer: "Extremoduro - Villancico del rey de Extremadura (Vaya puta mierda de villancico, colega)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/resolucion",
+                        answer: "Extremoduro - Resolución"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/tu-corazon",
+                        answer: "Extremoduro - Tu corazón"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/deltoya",
+                        answer: "Extremoduro - Deltoya",
+                        timeout: 3000
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-hoguera",
+                        answer: "Extremoduro - La hoguera"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/buscando-una-luna",
+                        answer: "Extremoduro - Buscando una luna"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/hoy-te-la-meto-hasta-las",
+                        answer: "Extremoduro - Hoy te la meto hasta las orejas"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/viento-dejame-ir-contigo",
+                        answer: "Extrechinato Y Tu - Viento (Déjame ir contigo)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/extremaydura",
+                        answer: "Extremoduro - Extremaydura"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/emparedado",
+                        answer: "Extremoduro - Emparedado"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/calle-esperanza-s-n",
+                        answer: "Extremoduro - Calle Esperanza s/n"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/romperas",
+                        answer: "Extremoduro - Romperás"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/cerca-del-suelo",
+                        answer: "Extremoduro - Cerca del suelo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-carrera",
+                        answer: "Extremoduro - La carrera"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ni-principes-ni-princesas",
+                        answer: "Extremoduro - Ni príncipes ni princesas"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/relaci-n-convencional",
+                        answer: "Extremoduro - Relación convencional"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/estoy-muy-bien",
+                        answer: "Extremoduro - Estoy muy bien"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/autorretrato",
+                        answer: "Extremoduro - Autorretrato"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/jugete-de-amor",
+                        answer: "Extrechinato Y Tu - Jugete de amor"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/qu-borde-era-mi-valle",
+                        answer: "Extremoduro - ¡Qué borde era mi valle!"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/te-juzgaran-s-lo-por-tus",
+                        answer: "Extremoduro - Te juzgarán sólo por tus errores (Yo no)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/su-culo-es-miel",
+                        answer: "Extremoduro - Su culo es miel"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/ama-ama-ama-y-ensancha-el-alma",
+                        answer: "Extremoduro - Ama, ama, ama y ensancha el alma",
+                        timeout: 4000
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/mi-espiritu-imperecedero",
+                        answer: "Extremoduro - Mi espíritu imperecedero"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/salir",
+                        answer: "Extremoduro - Salir"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/estado-policial",
+                        answer: "Extremoduro - Estado policial"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/desidia",
+                        answer: "Extremoduro - Desidia"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/v-centenario",
+                        answer: "Extremoduro - V centenario"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/poema-sobrecogido",
+                        answer: "Extremoduro - Poema sobrecogido"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/me-estoy-quitando",
+                        answer: "Extremoduro - Me estoy quitando"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/volando-solo",
+                        answer: "Extremoduro - Volando solo",
+                        timeout: 1200
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/a-fuego",
+                        answer: "Extremoduro - A fuego"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/pedra",
+                        answer: "Extremoduro - Pedrá"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/pepe-botika-donde-estan-mis-2",
+                        answer: "Extremoduro - Pepe Botika (Dónde están mis amigos)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/prometeo",
+                        answer: "Extremoduro - Prometeo"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/si-te-vas",
+                        answer: "Extremoduro - Si te vas..."
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/todos-me-dicen",
+                        answer: "Extremoduro - Todos me dicen"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/con-un-latido-del-reloj",
+                        answer: "Extremoduro - Con un latido del reloj"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/sucede",
+                        answer: "Extremoduro - Sucede"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-cancion-de-los-oficios",
+                        answer: "Extremoduro - La canción de los oficios (feat. Rosendo)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/posado-en-un-nenufar",
+                        answer: "Extremoduro - Posado en un nenúfar"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/decidi",
+                        answer: "Extremoduro - Decidí"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/bri-bri-bli-bli-en-el-mas-1",
+                        answer: "Extremoduro - Bri bri bli bli (En el más sucio rincón de mi negro corazón)"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/la-vereda-de-la-puerta-de-1",
+                        answer: "Extremoduro - La vereda de la puerta de atrás"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extremoduro-official/malos-pensamientos",
+                        answer: "Extremoduro - Malos pensamientos"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/tres-puertas",
+                        answer: "Extrechinato Y Tu - Tres puertas"
+                    }, 
+                    {
+                        url: "https://soundcloud.com/extrechinatoytu/suenos",
+                        answer: "Extrechinato Y Tu - Sueños"
+                    }
                 ],
                 Pn
             ).subscribe,
