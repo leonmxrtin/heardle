@@ -11715,12 +11715,21 @@ var app = (function() {
     function jn(e, t, n) {
         let r, s, i, o;
         u(e, Cn, (e) => n(26, (r = e))), u(e, On, (e) => n(27, (s = e)));
-        let a = x(Vt.startDate),
+        
+        // Calculate day index and iteration
+        let daysSinceStart = x(Vt.startDate);
+        let iteration = Math.floor(daysSinceStart / s.length);
+        let dayInCycle = daysSinceStart % s.length;
+        
+        // Pseudo-random shuffle based on iteration
+        let shuffledIndex = (dayInCycle * 17 + iteration * 31) % s.length;
+        
+        let a = shuffledIndex,
             l = {
                 url: s[a].url,
                 timeout: s[a].timeout ? s[a].timeout : 0,
                 correctAnswer: s[a].answer,
-                id: a,
+                id: daysSinceStart,
                 guessList: [],
                 hasFinished: !1,
                 hasStarted: !1,
@@ -11738,7 +11747,11 @@ var app = (function() {
             document.addEventListener(
                 d,
                 function() {
-                    document[c] || a === x(Vt.startDate) || location.reload(!0);
+                    let currentDays = x(Vt.startDate);
+                    let currentIteration = Math.floor(currentDays / s.length);
+                    let currentDayInCycle = currentDays % s.length;
+                    let currentShuffled = (currentDayInCycle * 17 + currentIteration * 31) % s.length;
+                    document[c] || a === currentShuffled || location.reload(!0);
                 },
                 !1
             );
