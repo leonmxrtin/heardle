@@ -11296,7 +11296,7 @@ var app = (function() {
         let dayInCycle = daysSinceStart % s.length;
         
         // Pseudo-random shuffle based on iteration
-        let shuffledIndex = (dayInCycle * 17 + iteration * 31) % s.length;
+        let shuffledIndex = (dayInCycle * 17 + iteration * 37) % s.length;
         
         let a = shuffledIndex,
             l = {
