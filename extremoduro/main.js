@@ -3813,7 +3813,7 @@ var app = (function() {
             c() {
                 (n = w("div")),
                 (n.innerHTML =
-                    '<p class="mb-3">Un clon de <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, pero con canciones de Extremoduro. Las canciones son elegidas de forma aleatoria.</p> \n\n\n\n <p class="mb-3">Versión hecha por <a href="https://twitter.com/leonmxrtin" title="Twitter">@leonmxrtin</a> </p> \n\n\n\n <p class="text-xs mb-3 text-custom-line">Hecho con <a href="https://developers.soundcloud.com">SoundCloud</a>\n. Código fuente <a href="https://github.com/leonmartinl/heardle">aquí</a>. Inspirado en <a href="https://heardlesp.app/">HeardlEsp</a>'),
+                    '<p class="mb-3">Un clon de Heardle, pero con canciones de Extremoduro. Las canciones son elegidas de forma aleatoria.</p> \n\n\n\n <p class="mb-3">Versión hecha por <a href="https://twitter.com/leonmxrtin" title="Twitter">@leonmxrtin</a>. </p> <p class="mb-3"> ¡Hasta siempre, siempre, siempre! En memoria de Roberto Iniesta. </p> \n\n\n\n <p class="text-xs mb-3 text-custom-line">Hecho con <a href="https://developers.soundcloud.com">SoundCloud</a>\n. Código fuente <a href="https://github.com/leonmartinl/heardle">aquí</a>. Inspirado en HeardlEsp.</p>'),
                 M(n, "class", "text");
             },
             m(e, t) {
